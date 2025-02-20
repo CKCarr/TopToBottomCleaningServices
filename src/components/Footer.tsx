@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
 import Contact from "./Contact";
 
 export default function Footer() {
@@ -13,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           {/* Left Side - Logo Images */}
           <div className="flex items-center space-x-4">
-            <Image src="/images/5.png" alt="Logo" width={400} height={200} />
+            {/* <Image src="/images/5.png" alt="Logo" width={400} height={200} /> */}
             <Contact />
             <Image src="/images/Top2BottomLogos/xTextLogo.png" alt="Text Logo" width={400} height={200} />
           </div>

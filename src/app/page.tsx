@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import Services from "@/components/Services";
-import CustomerNote from "@/components/CustomerNote";
 import TabComponent from "@/components/TabComponent";
 
 export default function Home() {

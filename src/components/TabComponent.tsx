@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Schedule from "@/components/Schedule";
-import Contact from "@/components/Contact";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Pricing from "@/components/Pricing";

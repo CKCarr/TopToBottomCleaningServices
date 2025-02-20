@@ -5,15 +5,15 @@ import ServiceCard from "../components/ServiceCard";
 
 export default function Services() {
   return (
-    <section id="services" className="max-w-6xl mx-auto px-6 py-12">
+    <section id="services" className="max-w-6xl mx-auto px-6 mb-4">
       {/* Header Section */}
-      <div className="flex flex-col md:flex-row items-center gap-4 mb-10">
+      <div className="flex flex-col md:flex-row items-center gap-6 mb-10">
         <Image
           src="/images/T2B-illustrations/servicesCleaners.png"
           alt="Cleaning Services"
           width={800}
           height={600}
-          className="lg:w-1/2 rounded-lg"
+          className="lg:w-1/2 rounded-lg "
         />
         <div className="lg:w-3/4 bg-secondary p-8 rounded-lg shadow-md text-center">
           <h3 className="text-3xl font-semibold text-white">Cleaning Services We Offer</h3>
