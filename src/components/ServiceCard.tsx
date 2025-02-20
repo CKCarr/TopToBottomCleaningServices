@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 interface ServiceCardProps {
   imageSrc: string;
@@ -19,7 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageSrc, title, description 
     >
       {/* Service Image */}
       <Image
-        src={imageSrc}
+        src={`${basePath}${imageSrc}`}
         alt={title}
         width={150}
         height={100}

@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Contact from "../components/Contact";
+import Contact from "@/components/Contact";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Hero() {
   const [showContact, setShowContact] = useState(false);
@@ -46,7 +47,7 @@ export default function Hero() {
         {/* Right Side - Images */}
         <div className="flex flex-col items-center space-y-4">
           <Image
-            src="/images/T2B-illustrations/heroHome.png"
+            src={`${basePath}/images/T2B-illustrations/heroHome.png`}
             alt="Cleaning Service"
             width={400}
             height={400}
@@ -57,7 +58,7 @@ export default function Hero() {
         {/* Floating Top-Left Image */}
         <div className="hidden lg:block absolute -top-24 -left-24 w-40 h-40">
           <Image
-            src="/images/T2B-illustrations/15.png"
+            src={`${basePath}/images/T2B-illustrations/15.png`}
             alt="Mother Daughter Duo"
             width={160}
             height={160}

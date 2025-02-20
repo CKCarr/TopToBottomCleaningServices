@@ -4,7 +4,7 @@ import Schedule from "@/components/Schedule";
 import WhatWeDo from "@/components/WhatWeDo";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Pricing from "@/components/Pricing";
-import DeepClean from "../components/DeepClean";
+import DeepClean from "@/components/DeepClean";
 
 const tabs = [
   { label: "What We Do", component: <WhatWeDo /> },

@@ -1,7 +1,7 @@
 "use client";
 import { ThemeProvider } from "@material-tailwind/react";
-import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
+import NavBar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -10,11 +10,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <title>T2B Cleaning Services</title>
         <meta name="description" content="Professional cleaning services." />
+        <link rel="icon" href="/TopToBottomCleaningServices/5.png" sizes="any" />
       </head>
       <body className="bg-gray-50 text-gray-900 antialiased">
         <ThemeProvider>
           <NavBar />
-          <main className="">{children}</main>
+          <main className="min-h-screen">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>

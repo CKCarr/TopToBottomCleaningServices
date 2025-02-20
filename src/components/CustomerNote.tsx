@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 
 export default function CustomerNote() {
+
+
   return (
     <section className="bg-secondary py-12 px-6 text-white">
       {/* Inner container for content */}
@@ -10,7 +14,7 @@ export default function CustomerNote() {
         {/* Top-left image */}
         <div className="width-[400px] h-[400px] absolute -top-40 -left-[250px] ">
           <Image
-            src="/images/T2B-illustrations/15.png" // Change to your image path
+            src={`${basePath}/images/Top2BottomLogos/15.png`} // Change to your image path
             alt="Mother Daughter Duo"
             width={250}
             height={250}
@@ -29,14 +33,14 @@ export default function CustomerNote() {
             </p>
             <p className="text-lg leading-relaxed mb-4">
             We truly love what we do—not just because we enjoy cleaning, but because it allows us to help busy families like yours.
-             Whether you need a deep clean, move-in/move-out service, or just help keeping up with chores, we are here for you!
+            Whether you need a deep clean, move-in/move-out service, or just help keeping up with chores, we are here for you!
             </p>
           </div>
 
           {/* Right-side Image & Contact Button */}
           <div className="flex flex-col items-center space-y-4">
             <Image
-              src="/images/T2B-illustrations/heroHome.png" // Change to your image path
+              src={`${basePath}/images/T2B-illustrations/heroHome.png`} // Change to your image path
               alt="Cleaning Service"
               width={400}
               height={400}

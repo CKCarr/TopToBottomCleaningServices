@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Contact from "./Contact";
+import Contact from "@/components/Contact";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function Footer() {
+
   return (
     <footer className="bg-white border-t border-light shadow-md">
       {/* Footer Container */}
@@ -14,7 +16,7 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             {/* <Image src="/images/5.png" alt="Logo" width={400} height={200} /> */}
             <Contact />
-            <Image src="/images/Top2BottomLogos/xTextLogo.png" alt="Text Logo" width={400} height={200} />
+            <Image src={`${basePath}/images/Top2BottomLogos/yTextLogo.png`} alt="Text Logo" width={400} height={200} />
           </div>
         </div>
               {/* Bottom Section - Copyright */}
