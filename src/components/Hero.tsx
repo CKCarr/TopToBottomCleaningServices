@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import Button from "../components/Button";
 import Contact from "../components/Contact";
 
 export default function Hero() {
@@ -21,7 +20,9 @@ export default function Hero() {
         
         {/* Left Side - Main Text */}
         <div className="flex-1">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-b-2 border-light">Hey There Friends!</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 border-b-2 border-light">
+            Hey There Friends!
+          </h2>
           <p className="text-lg leading-relaxed mb-4 ml-4">
             We are a Mother-Daughter Duo offering custom cleaning solutions for your everyday needs. 
             Over the years, we’ve worked in public schools while running our Top To Bottom Cleaning Service during weekends, evenings, school breaks, and summers.
@@ -33,11 +34,12 @@ export default function Hero() {
           
           {/* Contact Button */}
           <div className="mt-6">
-            <Button 
-              label="Text Us Today" 
-              className="rounded-md bg-secondary px-6 py-3 text-white" 
+            <button 
               onClick={() => setShowContact(true)}
-            />
+              className="rounded-md bg-secondary px-6 py-3 text-white text-lg font-semibold shadow-md hover:bg-primary transition"
+            >
+              Text Us Today
+            </button>
           </div>
         </div>
 
