@@ -5,4 +5,4 @@
 // // Re-export components
 // export { ThemeProvider, Button, Typography };
 
-export * from "@material-tailwind/react";
+// export * from "@material-tailwind/react";

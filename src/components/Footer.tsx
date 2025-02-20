@@ -1,54 +1,33 @@
-'use client';
-import React from 'react';
+"use client";
+import React from "react";
 import Image from "next/image";
-import { Typography } from '@material-tailwind/react';
+import { Typography } from "@material-tailwind/react";
+import Contact from "./Contact";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-blue-gray-100">
-      <div className="container ">
-        <div className="logos flex">
-          <Image
-            src="/images/5.png"
-            alt="logo"
-            width={300}
-            height={0}
-          />
-          <Image
-            src="/images/Top2BottomLogos/xTextLogo.png"
-            alt="text-logo"
-            width={400}
-            height={200}
-          />
+    <footer className="bg-white border-t border-light shadow-md">
+      {/* Footer Container */}
+      <div className="max-w-6xl mx-auto px-1 py-2">
+        {/* Top Section - Logos */}
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          {/* Left Side - Logo Images */}
+          <div className="flex items-center space-x-4">
+            <Image src="/images/5.png" alt="Logo" width={400} height={200} />
+            <Contact />
+            <Image src="/images/Top2BottomLogos/xTextLogo.png" alt="Text Logo" width={400} height={200} />
+          </div>
         </div>
-        <div className="flex">
-          <Typography color="blueGray" className="text-center p-3 mx-5">
-            Contact Us Today To Schedule a Service
-          </Typography>
-          <Image
-              src="/images/window.svg"
-              alt="window-logo"
-              width={50}
-              height={50}
-
-          />
-          <Image
-              src="/images/globe.svg"
-              alt="globe-logo"
-              width={50}
-              height={50}
-
-          />
+              {/* Bottom Section - Copyright */}
+        <div className="py-1">
+        <div className="text-center text-primary mb-5">
+          &copy; {new Date().getFullYear()} TopToBottom Cleaning Services. All rights reserved.
         </div>
+      </div>
       </div>
 
 
-      <div className="container mx-auto px-4 lg:px-8 py-4">
-        <Typography color="blueGray" className="text-center">
-          &copy; {new Date().getFullYear()} Top B Cleaning Services. All rights reserved.
-        </Typography>
-      </div>
+
     </footer>
-  )
+  );
 }
-// Compare this snippet from src/components/Footer.tsx:

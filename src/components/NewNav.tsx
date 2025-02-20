@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar */}
-      <nav className="bg-white border-b border-light shadow-md flex justify-between items-center">
+      <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
         {/* Left Side - Logo Images */}
         <div className="flex">
           <img src="/images/5.png" alt="Logo" className="h-25 w-40" />
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <button
           onClick={() => setShowContact(true)}
-          className="bg-secondary text-white px-4 py-2 rounded-xl text-xl font-semibold shadow-md hover:bg-primary transition mr-4"
+          className="bg-secondary text-white px-4 py-2 rounded-lg shadow-md hover:bg-primary transition"
         >
           Contact Us
         </button>
