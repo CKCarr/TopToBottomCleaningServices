@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Contact from "@/components/Contact";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+// const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const Navbar = () => {
   const [showContact, setShowContact] = useState(false);
@@ -21,7 +21,7 @@ const Navbar = () => {
             className="h-40 w-auto object-contain"
           /> */}
           <Image 
-            src={`${basePath}/images/Top2BottomLogos/xTextLogo.png`}
+            src={`/images/Top2BottomLogos/xTextLogo.png`}
             alt="Logo 2" 
             width={90} 
             height={50} 

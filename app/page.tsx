@@ -1,8 +1,6 @@
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import TabComponent from "@/components/TabComponent";
-import "./globals.css";
-
 
 export default function Home() {
   return (

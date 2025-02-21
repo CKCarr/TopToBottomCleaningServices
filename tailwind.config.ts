@@ -1,33 +1,32 @@
-import type { Config } from "tailwindcss";
-
+/** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: '#22577a', // Dark Blue
-				secondary: '#38a3a5', // Aqua
-				accent: '#57cc99', // Soft Green
-				light: '#80ed99', // Light Green
-				lighter: '#c7f9cc', // Pale Green
-				black: '#000000',
-				white: '#ffffff',
+        primary: "#22577a",
+        secondary: "#38a3a5",
+        accent: "#57cc99",
+        light: "#80ed99",
+        lighter: "#c7f9cc",
+        black: "#000000",
+        white: "#ffffff",
       },
       fontFamily: {
-				sans: ['Montserrat', 'sans-serif'],
-			},
-			fontWeight: {
-				light: "300",
-				regular: "400",
-				medium: "500",
-				bold: "700",
-			},
+        sans: ["Montserrat", "sans-serif"],
+      },
+      fontWeight: {
+        light: "300",
+        regular: "400",
+        medium: "500",
+        bold: "700",
+      },
     },
   },
   plugins: [],
