@@ -2,7 +2,7 @@
 import { ThemeProvider } from "@material-tailwind/react";
 import NavBar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import "../styles/globals.css";
+import "./globals.css";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
