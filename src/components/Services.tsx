@@ -25,7 +25,8 @@ export default function Services() {
       </div>
 
       {/* Service Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 justify-center place-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 sm:gap-8 w-full place-items-center">
+
 
         {/* Standard Services */}
         <ServiceCard imageSrc="/images/T2B-illustrations/vacuum.png" title="Floor Care" description="Sweeping, mopping, and vacuuming (furniture moved if needed)." />

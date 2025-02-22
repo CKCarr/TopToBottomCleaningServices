@@ -13,19 +13,24 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageSrc, title, description 
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div
-      className="relative w-[180px] h-[180px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px] bg-white rounded-lg border-4 border-secondary shadow-lg flex flex-col items-center justify-center overflow-hidden"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+      <div
+        className="relative w-full sm:w-[90%] md:w-[80%] lg:w-[300px] h-[120px] sm:h-[150px] md:h-[180px] bg-white rounded-lg border-4 border-secondary shadow-lg flex flex-row sm:flex-col items-center sm:items-center justify-center overflow-hidden mx-auto my-3"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+
+  
+
       {/* Service Image */}
       <Image
         src={`${basePath}${imageSrc}`}
         alt={title}
-        width={150}
-        height={100}
-        className={`w-full h-[60%] object-cover rounded-md transition-transform duration-500 ${isHovered ? "scale-110 blur-sm" : ""}`}
+        width={80}
+        height={80}
+        className="w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] object-contain rounded-md transition-transform duration-500"
       />
+
+
 
 {/* Overlay for Hover Effect */}
 {isHovered && (

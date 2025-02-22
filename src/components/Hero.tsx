@@ -18,6 +18,17 @@ export default function Hero() {
     <section className="bg-secondary py-12 px-6 text-white">
       {/* Container for Centered Content */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10 bg-white text-gray-900 p-8 rounded-lg shadow-lg relative">
+
+        {/* Right Side - Images */}
+        <div className="flex flex-col items-center space-y-4">
+          <Image
+            src={`${basePath}/images/T2B-illustrations/heroHome.png`}
+            alt="Cleaning Service"
+            width={400}
+            height={400}
+            className="rounded-lg shadow-md"
+          />
+        </div>
         
         {/* Left Side - Main Text */}
         <div className="flex-1">
@@ -44,16 +55,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Side - Images */}
-        <div className="flex flex-col items-center space-y-4">
-          <Image
-            src={`${basePath}/images/T2B-illustrations/heroHome.png`}
-            alt="Cleaning Service"
-            width={400}
-            height={400}
-            className="rounded-lg shadow-md"
-          />
-        </div>
+
 
         {/* Floating Top-Left Image */}
         <div className="hidden lg:block absolute -top-24 -left-24 w-40 h-40">
