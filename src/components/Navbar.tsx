@@ -2,52 +2,48 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Contact from "@/components/Contact";
-// const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const Navbar = () => {
   const [showContact, setShowContact] = useState(false);
 
+  /** Function to close modal when clicking outside */
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) {
+      setShowContact(false); // Close when clicking background
+    }
+  };
+
   return (
     <>
       {/* Navbar */}
-      <nav className="bg-white border-b border-light shadow-md flex justify-between items-center  h-24">
-        {/* Left Side - Smaller Logo Images */}
-        <div className="flex items-center pr-8"> 
-          {/* <Image 
-            src={`${basePath}/images/Top2BottomLogos/5.png`} 
-            alt="Logo" 
-            width={50} 
-            height={50} 
-            className="h-40 w-auto object-contain"
-          /> */}
+      <nav className="bg-white border-b border-light shadow-md flex justify-between items-center px-4 sm:px-8 h-20">
+        {/* Left Side - Logo */}
+        <div className="flex items-center">
           <Image 
             src={`/images/Top2BottomLogos/xTextLogo.png`}
-            alt="Logo 2" 
-            width={90} 
-            height={50} 
-            className="h-80 w-auto object-contain mr-32 pr-32"
+            alt="Logo" 
+            width={200} 
+            height={100} 
+            className="w-32 sm:w-48 md:w-56 lg:w-64 h-auto object-contain"
           />
         </div>
 
         {/* Contact Button */}
         <button
           onClick={() => setShowContact(true)}
-          className="bg-secondary text-white px-3 py-1 rounded-lg text-lg font-semibold shadow-md hover:bg-primary transition"
+          className="bg-secondary text-white px-4 py-2 rounded-lg text-lg font-semibold shadow-md hover:bg-primary transition mr-6 sm:mr-10"
         >
           Contact Us
         </button>
       </nav>
 
-      {/* Contact Popup */}
+      {/* Contact Popup (Click Outside to Close) */}
       {showContact && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+          onClick={handleOverlayClick} // Close on clicking outside
+        >
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-md relative">
-            <button 
-              onClick={() => setShowContact(false)} 
-              className="absolute top-2 right-2 text-xl"
-            >
-              ✖
-            </button>
             <Contact />
           </div>
         </div>

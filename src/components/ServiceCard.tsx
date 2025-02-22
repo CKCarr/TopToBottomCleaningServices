@@ -14,7 +14,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ imageSrc, title, description 
 
   return (
     <div
-      className="relative w-[180px] h-[180px] sm:w-[120px] sm:h-[120px] md:w-[250px] md:h-[250px] bg-white rounded-lg border-4 border-secondary shadow-lg flex flex-col items-center justify-center overflow-hidden"
+      className="relative w-[180px] h-[180px] sm:w-[180px] sm:h-[180px] md:w-[250px] md:h-[250px] bg-white rounded-lg border-4 border-secondary shadow-lg flex flex-col items-center justify-center overflow-hidden"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
