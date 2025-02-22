@@ -10,7 +10,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <title>T2B Cleaning Services</title>
         <meta name="description" content="Professional cleaning services." />
-        <link rel="icon" href="/TopToBottomCleaningServices/5.png" sizes="any" />
+        <link rel="icon" href="./5.png" sizes="any" />
       </head>
       <body className="bg-gray-50 text-gray-900 antialiased">
         <ThemeProvider>
