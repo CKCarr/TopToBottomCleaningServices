@@ -12,6 +12,7 @@ const Contact = () => {
       </div>
 
       <p className="mt-6 text-xl font-semibold text-light">💬 Text us today! We promise you won’t be disappointed!</p>
+      <p className="mt-2 text-sm text-white">📍 Hobart, OK & Surrounding Area</p>
     </section>
   );
 };
